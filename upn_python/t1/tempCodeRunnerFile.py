@@ -1,0 +1,1 @@
+actura2.imprimir_resumen()
