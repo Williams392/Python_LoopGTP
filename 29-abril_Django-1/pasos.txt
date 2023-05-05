@@ -1,70 +1,82 @@
+_ Desde Consola:
+# comando -> [cd Desktop]
+# comando -> [mkdir app-movies] -> Crar carpeta.
+# comando -> [cd app-movies]
+
+# comando -> [. code] ->  abre vscode en consola.
+
 #---------------------------------------------------------------
 
-. Paso 1 -> en Consola: (Crear el ENTORNO VIRTUAL -> venv), url -> https://docs.python.org/3/library/venv.html
-# comando -> [python3 -m venv venv], se crear la carpeta -> [venv]
-
-#---------------------------------------------------------------
+. Paso 1 -> Crear el ENTORNO VIRTUAL -> venv:
+_ comando -> [python3 -m venv venv], se crear la carpeta -> [venv]
 
 
 . Paso 2 -> activar el modo virtual en consola:
-# comando -> [source venv/bin/activate]
+_ comando -> [source venv/bin/activate]
+
 
 #---------------------------------------------------------------
-        Despues instalar las dependencias -> (DJANGO)
+                    Django o Flask, etc
 #---------------------------------------------------------------
 
 . Paso 3 -> Instalar Django:
-# comando -> [pip install Django]
+_ comando -> [pip install Django]
 
 #---------------------------------------------------------------
 
-. Paso 4 -> (Genera un archivo) Para guardas las Dependencias instaladas:
+
+. Paso 4 -> Para  ver las librerias Instalas de Python:
 # comando -> [pip freeze > requirements.txt]
+. 4.1 -> para ver en consola las dependecias instaladas:
+# comando -> [nano requirements.txt]
 
 #---------------------------------------------------------------
 
-. Paso 5 -> Crea la estructura prinicipal(core) - Donde configuraciones:
+. Paso 5 -> Creando un proyecto -> core(etc):
 # comando -> [django-admin startproject core]
 
 #---------------------------------------------------------------
+       CORRER dentro todo de la carpeta -> (core)
+#---------------------------------------------------------------
 
-. Paso 6 -> Crear (SQL lite) y Para correr el servidor:
+
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+. Paso 6 -> Crear (SQL lite) y Para correr el servidor WEB:
 - Comando -> [python manage.py runserver]
+. 6.1 -> para ver un comando en especifico-varios
+_ comando -> [python manage.py]
+
+
+#---------------------------------------------------------------
+        Adentro de -> Crar carpeta MOVIES
+#---------------------------------------------------------------
+
+
+_ Paso 7 -> Crar carpeta MOVIES dento de (CORE)
+_ comando -> [python manage.py startapp movies]
+-> Y dentro de movis crear el archivo (urls.py)
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
+        Comando para base de datos -- (Migraciones)
 #---------------------------------------------------------------
+. Adentro de -> archivo core:
 
-_ SQL lite, creo?
-# Adentro de -> archivo core:
+ 
+1. Genera los archivos de migración para aplicar los cambios en BaseDatos:
+_ Siempre que agamos un cambio esto se debe que HACER para ACTUALIZAR.
+_ comando -> [python manage.py makemigrations]
 
-. paso :
-# comando -> [clear] 
 
-#---------------------------------------------------------------
-# archivo core -> siempre correr aca:
+2. Aplicar migraciones del Admin, de todas que trae Django por defecto:
+_ comando -> [python manage.py migrate]
 
-. Paso : para CORRER a navegador:
-# comando -> [python manage.py runserver]
 
-#---------------------------------------------------------------
-_ Esto al Ultimo:
+3. Para el Login:
+_ comando -> [python manage.py createsuperuser]
+_ Username: williams392
+_ email: vallewilliams392@gmail.com
+_ Password: lenovo1234
 
-# archivo core -> siempre correr aca:
-
-. Paso : Gener uno archivo de los cambios:
-1.
-# comando -> [python manage.py makemigrations]
-2.
-# comando -> [python manage.py migrate]
 
 #---------------------------------------------------------------
-#---------------------------------------------------------------
-# archivo core -> siempre correr aca:
-
-. crear el super usuario(Django administration -> pagina):
-
-# comando -> [python manage.py createsuper]
-_ Username: 
-_ Password: 
-_ contra:

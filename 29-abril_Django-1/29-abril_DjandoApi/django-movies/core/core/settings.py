@@ -22,7 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-=(htnohpmb31emhq_+s1_5ve(*8(khjm0b!@4$ag83$xdwcg4z'
 
-# ( Yo) -------------------
+# ( Yo) ------------------
+
 # SECURITY WARNING: don't run with debug turned on in production!
 
 # Si cambio a false -> La pagina cae para ver los probblemas del Server:
@@ -31,7 +32,7 @@ DEBUG = True
 # ["*"] -> tiene esto dice que hay multiples cambios:
 ALLOWED_HOSTS = ["*"]
 
-# -------------------
+# ( Yo) ------------------
 
 # Application definition
 
