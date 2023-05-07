@@ -27,9 +27,10 @@ SECRET_KEY = 'django-insecure-=(htnohpmb31emhq_+s1_5ve(*8(khjm0b!@4$ag83$xdwcg4z
 # SECURITY WARNING: don't run with debug turned on in production!
 
 # Si cambio a false -> La pagina cae para ver los probblemas del Server:
-DEBUG = True
+DEBUG = True  # se pone en (False) cuando ya entra en Producion.
 
-# ["*"] -> tiene esto dice que hay multiples cambios:
+# ["*"] -> tiene esto dice que hay multiples cambios(No BuenaPractica).
+# ["127.0.0.1"] -> Una lista puede tener otras direcciones(BuenaPra).
 ALLOWED_HOSTS = ["*"]
 
 # ( Yo) ------------------
@@ -43,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'movies',
 ]
 
 MIDDLEWARE = [
@@ -111,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Lima'  # original -> 'UTC'
 
 USE_I18N = True
 
