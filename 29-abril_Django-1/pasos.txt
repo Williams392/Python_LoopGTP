@@ -25,7 +25,7 @@ _ comando -> [python3 -m venv venv], se crear la carpeta -> [venv]
 . Paso 3 -> Instalar Django:
 . comando -> [pip install Django]
 
-#---------------------------------------------------------------
+#----------
 
 
 . Paso 4 -> Para  ver las librerias Instalas de Python:
@@ -44,11 +44,13 @@ _ comando -> [python3 -m venv venv], se crear la carpeta -> [venv]
 
 
 ()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
-. Paso 6 -> Crear (SQL lite) y Para correr el servidor WEB:
-- Comando -> [python manage.py runserver]
-. 6.1 -> para ver un comando en especifico-varios
-_ comando -> [python manage.py]
+_ Paso 6 : Crear (SQL lite) y Para correr el servidor WEB:
+. Comando -> [python manage.py runserver]
+. 6.1 : para ver un comando en especifico-varios
+. comando -> [python manage.py]
 
+_ 6.6: Para usar (Django REST Framework)
+--> Comando -> [pip install djangorestframework]
 
 #---------------------------------------------------------------
         Adentro de -> Crar carpeta MOVIES
@@ -60,19 +62,19 @@ _ comando -> [python manage.py startapp movies]
 -> Y dentro de movis crear el archivo (urls.py)
 
 #---------------------------------------------------------------
-#---------------------------------------------------------------
         Comando para base de datos -- (Migraciones)
 #---------------------------------------------------------------
+
 . Adentro de -> archivo core:
 
-1. Aplicar migraciones del Admin, de todas que trae Django por defecto:
-_ comando -> [python manage.py migrate]
+1. Genera los archivos de migración para aplicar los cambios en BaseDatos:
+. (Siempre que agamos un cambio esto se debe que HACER para ACTUALIZAR)
+. comando -> [python manage.py makemigrations]
 
+2. Aplicar migraciones en el Admin, de todas que trae Django por defecto:
+. comando -> [python manage.py migrate]
 
-2. Genera los archivos de migración para aplicar los cambios en BaseDatos:
-_ Siempre que agamos un cambio esto se debe que HACER para ACTUALIZAR.
-_ comando -> [python manage.py makemigrations]
-
+#----------
 
 3. Para el Login(iniciar sección):
 _ comando -> [python manage.py createsuperuser]
