@@ -9,7 +9,7 @@ from django.db import models
 # Creando para -> (DJANGO ADMINISTRATION)
 class Movie(models.Model):
     name = models.CharField(max_length=255, unique=True)
-    year = models.IntegerField(null=True, blank=True)
+    year = models.IntegerField()
     synopsis = models.TextField(null=True, blank=True)
 
     def __str__(self):

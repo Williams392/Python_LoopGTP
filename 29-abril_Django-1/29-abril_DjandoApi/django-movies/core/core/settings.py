@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ["*"]
 # ( Yo) ------------------
 
 # Application definition
-
+# Aplicaciones (instaladas,incorporadas y personalizadas) en un proyecto
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -50,8 +50,9 @@ INSTALLED_APPS = [
 
     # Aplicaciones personalizadas
     'movies',
-    'reviews'
 ]
+
+# ( Yo) ------------------
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

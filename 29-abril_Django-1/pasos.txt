@@ -1,4 +1,6 @@
-. 2:12:52
+. Sabado 29(domingo no hubo clases)
+. Completo
+=====
 
 _ Desde Consola:
 # comando -> [cd Desktop]
@@ -12,11 +14,10 @@ _ Desde Consola:
 . Paso 1 -> Crear el ENTORNO VIRTUAL -> venv:
 _ comando -> [python3 -m venv venv], se crear la carpeta -> [venv]
 
-----
-(carpeta -> django-movies)
+----()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
 . Paso 2 -> activar el modo virtual en consola:
 . comando -> [source venv/bin/activate]
-
+----
 
 #---------------------------------------------------------------
                     Django o Flask, etc
