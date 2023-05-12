@@ -1,5 +1,5 @@
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from rest_framework import status
 from rest_framework.views import APIView
@@ -9,15 +9,21 @@ from .models import Movie
 from .serializers import MovieSerializer
 
 
-# Create your views here.
+# Crea tus vistas aquí.
 def index_movies(request):
     return JsonResponse({'message': 'Online'})
 
 
+# importante agregar (APIView) -> para crear herencias:
 class MovieView(APIView):
-    def get(self, request):
-        movies = Movie.objects.all()
-        serializer = MovieSerializer(movies, many=True)
+    def get(self, request, pk = None):
+        if pk:
+            #movie = Movie.objects.get(pk=pk)
+            movie = get_object_or_404(Movie, pk=pk)
+            serializer = MovieSerializer(movie)
+        else:
+            movies = Movie.objects.all()
+            serializer = MovieSerializer(movies, many = True)
         return Response(serializer.data)
 
     def post(self, request):
@@ -36,4 +42,6 @@ class MovieView(APIView):
         return Response({"msg": "Delete recibido"})
 
 
-# el request es el -> (JSON)
+
+# APUNTES:
+# 1_ El request es un -> (JSON) y (tiene todo  detalle de la peticion)
