@@ -14,4 +14,6 @@ class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
         fields = '__all__'
+
+        # Todos lo datos de la PELICULA (models.py) -> '__all__'
         # de '__all__' -> uno cada uno ['name', 'year']

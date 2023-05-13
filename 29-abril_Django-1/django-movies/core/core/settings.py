@@ -22,18 +22,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-=(htnohpmb31emhq_+s1_5ve(*8(khjm0b!@4$ag83$xdwcg4z'
 
-# ( Yo) ------------------
+# ------------------
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-# Si cambio a false -> La pagina cae para ver los probblemas del Server:
-DEBUG = True  # se pone en (False) cuando ya entra en Producion.
+# Si cambio a (false) -> La pagina cae para ver los probblemas del Server:
+DEBUG = True
 
 # ["*"] -> tiene esto dice que hay multiples cambios(No BuenaPractica).
 # ["127.0.0.1"] -> Una lista puede tener otras direcciones(BuenaPra).
 ALLOWED_HOSTS = ["*"]
 
-# ( Yo) ------------------
+# ------------------
 
 # Application definition
 # Aplicaciones (instaladas,incorporadas y personalizadas) en un proyecto
@@ -48,8 +48,9 @@ INSTALLED_APPS = [
     # Aplicaciones de terceros
     'rest_framework',
 
-    # Aplicaciones personalizadas
+    # Cada ves que cree una nueva (APLICACION)
     'movies',
+    'reviews',
 ]
 
 # ( Yo) ------------------

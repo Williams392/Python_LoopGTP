@@ -1,6 +1,7 @@
 =====
+. Codigo del 28 de abril - 7 mayo | Completo:
+
 . Sabado 29(domingo no hubo clases)
-. Codigo del 28 de abril - 7 mayo | Completo
 . video 3(1:49:07) _ me quede: -57:08
 =====
 
@@ -16,10 +17,10 @@ _ Desde Consola:
 . Paso 1 -> Crear el ENTORNO VIRTUAL -> venv:
 _ comando -> [python3 -m venv venv], se crear la carpeta -> [venv]
 
-----()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+----)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
 . Paso 2 -> activar el modo virtual en consola:
 . comando -> [source venv/bin/activate]
-----
+----)()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
 
 #---------------------------------------------------------------
                     Django o Flask, etc
@@ -59,10 +60,11 @@ _ 6.6: Para usar (Django REST Framework)
         Adentro de -> Crar carpeta MOVIES
 #---------------------------------------------------------------
 
-
-_ Paso 7 -> Crar carpeta MOVIES dento de (CORE)
-_ comando -> [python manage.py startapp movies]
--> Y dentro de movis crear el archivo (urls.py)
+_ Paso 7 -> creando nueva aplicación de la carpeta MOVIES dento de (CORE)
+_ comando -> [python manage.py startapp movies] -> core/settings -> ('reviews')
+_ AVISO -> AL CREAR UNA NUEVA APLICACION:
+-> Y dentro de movis crear el archivo [urls.py]
+-> Y dentro de movis crear el archivo [serializer.py]
 
 #---------------------------------------------------------------
         Comando para base de datos -- (Migraciones)

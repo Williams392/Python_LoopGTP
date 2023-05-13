@@ -7,6 +7,8 @@ from django.db import models
 
 
 # Creando para -> (DJANGO ADMINISTRATION)
+
+# Esta clase se usa para la carpeta -> (serializer.py)
 class Movie(models.Model):
     name = models.CharField(max_length=255, unique=True)
     year = models.IntegerField()

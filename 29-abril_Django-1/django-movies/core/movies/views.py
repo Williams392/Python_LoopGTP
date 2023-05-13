@@ -16,14 +16,15 @@ def index_movies(request):
 
 # importante agregar (APIView) -> para crear herencias:
 class MovieView(APIView):
-    def get(self, request, pk = None):
+
+    def get(self, request, pk=None):
         if pk:
-            #movie = Movie.objects.get(pk=pk)
-            movie = get_object_or_404(Movie, pk=pk)
+            # movie = Movie.objects.get(pk=pk)
+            movie = get_object_or_404(Movie, pk=pk)  # validacion
             serializer = MovieSerializer(movie)
         else:
             movies = Movie.objects.all()
-            serializer = MovieSerializer(movies, many = True)
+            serializer = MovieSerializer(movies, many=True)
         return Response(serializer.data)
 
     def post(self, request):
@@ -35,12 +36,25 @@ class MovieView(APIView):
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def put(self, request, pk=None):
-        return Response({"msg": "Put recibido"})
+    def put(self, request, pk=None):  # Para actualizar la Movie
+        movie = get_object_or_404(Movie, pk=pk)
+        serializer = MovieSerializer(movie, data=request.data)
+        if serializer.is_valid():
+            serializer.save()  # Guardar Cambios
+            return Response(serializer.data)
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, pk=None):
-        return Response({"msg": "Delete recibido"})
-
+        if pk:
+            movie = get_object_or_404(Movie, pk=pk)
+            movie.delete()
+        else:
+            return Response(
+                {"msg": "Necesitas enviar el ID de la película a eliminar"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        return Response({"msg": f"Película con ID {pk} eliminada"})
 
 
 # APUNTES:
