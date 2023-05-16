@@ -27,7 +27,7 @@ class ProtectedView(APIView):
 """"
 Paso 5:
 
-. Creando una vista que sea PROTEGIDA:
+. Creando una vista PROTEGIDA:
   _ Para solo mostrar al dueño del proveerdor, el desorrollador, etc.
     . Para ver la lista de ventas, etc.
 
