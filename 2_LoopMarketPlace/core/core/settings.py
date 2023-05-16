@@ -37,11 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
+    # Aplicaciones INSTALADAS y migrar de nuevo:
     'rest_framework',
+    'rest_framework.authtoken',
 
     # App instaladas, despues pueder CORRER (python manage.py runserver):
     'authentication',
+    'products',
 ]
 
 MIDDLEWARE = [
