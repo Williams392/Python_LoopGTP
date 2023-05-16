@@ -12,9 +12,8 @@ from rest_framework import status  # 3
 
 from .serializers import LoginSerializer, UserSerializer  # 4
 
-# Create your views here.
 
-
+# Se utiliza para autenticar a los usuarios utilizando las credenciales proporcionadas.
 class LoginView(APIView):
 
     # Obtuvimos el tipo USUARIO
@@ -45,6 +44,7 @@ class LoginView(APIView):
                 status=status.HTTP_401_UNAUTHORIZED)
 
 
+# Se utiliza para registrar nuevos usuarios en el sistema.
 class SignUpView(APIView):
     serializer_class = UserSerializer
 

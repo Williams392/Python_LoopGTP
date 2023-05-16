@@ -1,0 +1,4 @@
+# archivos que voy a ignorar, para que no se suba
+
+db.sqlite3
+.vscode

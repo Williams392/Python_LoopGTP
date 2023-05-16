@@ -47,12 +47,21 @@ _ 3.1: Para usar (Django REST Framework)
 . Esta Aplicacion(authentication) va encapsular todo relacionado al incio de seccion:
 _ comando -> [python manage.py startapp authentication]
 
-. Paso 5 -> Creando un proyecto -> core(etc):
+#-----------------
+
+. Paso 5 -> Creando un proyecto -> core:
+
+===> (core) es la principal de TODAS:
+
 # comando -> [django-admin startproject core] -> core/settings -> agregar('reviews')
-# core(adentro crear cada apliacion):
+# core, adentro crear cada apliacion:
+
+# comando para secunadio -> [[python manage.py startapp products]]
 _ movies
 _ reviews
 _ authentication
+_ products
+_ etc...
 
 # AVISO -> AL CREAR UNA NUEVA APLICACION:
 -> 1. dentro de cada apliacion [urls.py]
@@ -64,7 +73,7 @@ _ authentication
 
 
 ()()()
-_ Paso 6 : Crear (SQL lite) y Para correr el servidor WEB:
+_ Paso 6 : Crear SQL lite y Para correr el servidor WEB:
 . Comando -> [python manage.py runserver]
 . 6.1 : para ver un comando en especifico-varios
 . comando -> [python manage.py]
@@ -86,7 +95,7 @@ _ Paso 6 : Crear (SQL lite) y Para correr el servidor WEB:
 
 #----------
 
-3. Para el Login(iniciar sección):
+3. Para el Login, iniciar sección:
 _ comando -> [python manage.py createsuperuser]
 _ Username: williams392
 _ email: v_s392@gmail.com
