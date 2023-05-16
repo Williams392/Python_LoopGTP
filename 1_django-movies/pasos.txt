@@ -1,0 +1,91 @@
+=====
+. Codigo del 28 de abril - 7 mayo | Completo:
+
+. Sabado 29(domingo no hubo clases)
+. video 3(1:49:07) _ me quede: -57:08
+=====
+
+_ Desde Consola:
+# comando -> [cd Desktop]
+# comando -> [mkdir app-movies] -> Crar carpeta.
+# comando -> [cd app-movies]
+
+# comando -> [. code] ->  abre vscode en consola.
+
+#---------------------------------------------------------------
+
+. Paso 1 -> Crear el ENTORNO VIRTUAL -> venv:
+_ comando -> [python3 -m venv venv], se crear la carpeta -> [venv]
+
+----)()
+. Paso 2 -> activar el modo virtual en consola:
+. comando -> [source venv/bin/activate]
+----)()
+
+#---------------------------------------------------------------
+                    Django o Flask, etc
+#---------------------------------------------------------------
+
+. Paso 3 -> Instalar Django:
+. comando -> [pip install Django]
+
+#----------
+
+
+. Paso 4 -> Para  ver las librerias Instalas de Python:
+# comando -> [pip freeze > requirements.txt]
+. 4.1 -> para ver en consola las dependecias instaladas:
+# comando -> [nano requirements.txt]
+
+#---------------------------------------------------------------
+
+. Paso 5 -> Creando un proyecto -> core(etc):
+# comando -> [django-admin startproject core]
+
+#---------------------------------------------------------------
+       CORRER dentro todo de la carpeta -> (core)
+#---------------------------------------------------------------
+
+
+()()()
+_ Paso 6 : Crear (SQL lite) y Para correr el servidor WEB:
+. Comando -> [python manage.py runserver]
+. 6.1 : para ver un comando en especifico-varios
+. comando -> [python manage.py]
+
+_ 6.6: Para usar (Django REST Framework)
+--> Comando -> [pip install djangorestframework]
+
+#---------------------------------------------------------------
+        Adentro de -> Crar carpeta MOVIES
+#---------------------------------------------------------------
+
+_ Paso 7 -> creando nueva aplicación de la carpeta MOVIES dento de (CORE)
+_ comando -> [python manage.py startapp movies] -> core/settings -> ('reviews')
+_ AVISO -> AL CREAR UNA NUEVA APLICACION:
+-> Y dentro de movis crear el archivo [urls.py]
+-> Y dentro de movis crear el archivo [serializer.py]
+
+#---------------------------------------------------------------
+        Comando para base de datos -- (Migraciones)
+#---------------------------------------------------------------
+
+. Adentro de -> archivo core:
+
+1. Genera los archivos de migración para aplicar los cambios en BaseDatos:
+. (Siempre que agamos un cambio esto se debe que HACER para ACTUALIZAR)
+. comando -> [python manage.py makemigrations]
+
+2. Aplicar migraciones en el Admin, de todas que trae Django por defecto:
+. comando -> [python manage.py migrate]
+
+#----------
+
+3. Para el Login(iniciar sección):
+_ comando -> [python manage.py createsuperuser]
+_ Username: williams392
+_ email: v_s2@gmail.com
+_ Password: l_4
+
+
+#---------------------------------------------------------------

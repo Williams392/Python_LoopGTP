@@ -75,8 +75,8 @@ _ comando -> [python manage.py migrate]
 3. Para el Login:
 _ comando -> [python manage.py createsuperuser]
 _ Username: williams392
-_ email: vallewilliams392@gmail.com
-_ Password: lenovo1234
+_ email: v_2@gmail.com
+_ Password: l_4
 
 
 #---------------------------------------------------------------
