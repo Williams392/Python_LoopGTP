@@ -1,3 +1,21 @@
+TAREA:
+
+. HACER el Modelo PRODUCT:
+  _ Para manejar y cargar el modelo producto.
+
+  _ [Nombre PRODUCT, Descripcion PRODUCT, fotos(Varias) PRODUCT y Un PRECIO].
+    _ Precio: dato de tipo numerico
+    _ Nombre, Descripcion: de tipo texto
+    _ Foto: Campo de la foto
+
+_ Y cada producto va estar asociado aun VENDEDOR y un vendedor es usuario base
+  de la applicacion
+
+__ RETO: Revisar como haciendo una modificaion al MODELO autentication,
+   . Como puedes detectar quien es un comprador y quien es un vendedor.
+   . Oh como alguien va ser un vendedor:
+     _ Que datos se necesitaran para que sea un vendedor.
+   
 =====
 . Codigo del 13 de Mayo - x Mayo | New Project:
 
