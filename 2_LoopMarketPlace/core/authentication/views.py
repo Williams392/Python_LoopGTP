@@ -36,6 +36,7 @@ class LoginView(APIView):
 
             # Para mostrar el token(contraseña), en la respuesta:
             token, _ = Token.objects.get_or_create(user=user)
+
             user_serializer = UserSerializer(user)
             user_serializer = dict(user_serializer.data)  # ConvertDiccionario.
             user_serializer['token'] = str(token.key)

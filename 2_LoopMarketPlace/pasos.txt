@@ -11,7 +11,7 @@ TAREA:
 _ Y cada producto va estar asociado aun VENDEDOR y un vendedor es usuario base
   de la applicacion
 
-__ RETO: Revisar como haciendo una modificaion al MODELO autentication,
+__ RETO: Revisar como haciendo una modificaion al MODELO authentication,
    . Como puedes detectar quien es un comprador y quien es un vendedor.
    . Oh como alguien va ser un vendedor:
      _ Que datos se necesitaran para que sea un vendedor.
@@ -121,3 +121,26 @@ _ Password: l_45
 
 
 #---------------------------------------------------------------
+_ APUNTES:
+
+. (Body) Para que se genere el TOKEN: 
+http://127.0.0.1:8000/auth/login/
+{
+  "email":"vallewilliams392@gmail.com",
+  "password": "l_5"
+}
+
+. ( Headers) Para cerrar sesion: 
+http://127.0.0.1:8000/auth/logout/
+_ Authorization   |  Token  xxxxx
+
+#-----------
+(Imagenes :)
+1.  la biblioteca Pillow ejecutando el siguiente comando en tu entorno virtual
+_ [ python -m pip install Pillow ]
+
+1.1 si es desde 0 ( terminal CMD ):
+    _ pipenv --version
+    _ pipenv --version
+
+    
