@@ -1,4 +1,4 @@
-# (1) # views.py
+# (1) views.py
 
 from django.shortcuts import render
 

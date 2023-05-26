@@ -14,6 +14,11 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     description = models.TextField(null=True, blank=True)
 
+    image = models.FileField(upload_to='products/',
+                             max_length=255, null=True, blank=True)
+
+    # image = models.ImageField()
+
     def __str__(self):
         return self.product
 
@@ -22,12 +27,11 @@ class Product(models.Model):
 1. Actualizar las migraciones y aplicar los cambios:
 _ python manage.py makemigrations
 _ python manage.py migrate
-
 '''
 
 
 # 2. Para visualizar en DJANGO administration:
 # _ amdmin.py
 
-# . Imágenes en Django:
-# _ Error: pipenv install pillow
+# . Imagenes en Django:
+# _ pipenv install Pillow

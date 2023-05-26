@@ -5,7 +5,7 @@ from .models import Product
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'product', 'brand', 'price', 'description')
+    list_display = ('id', 'product', 'brand', 'price', 'description', 'image')
     ordering = ('-id',)
 
 
