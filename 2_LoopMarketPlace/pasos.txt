@@ -55,7 +55,13 @@ _ 3.1: Para usar (Django REST Framework)
 
 . Paso 4 -> Para  guardar las librerias Instalas de Python:
 # comando -> [pip freeze > requirements.txt]
-. 4.1 -> para ver en consola las dependecias instaladas:
+
+. 4.1 en caso descargo un PROJECT django ya creado y instalar todo sus LIBRERIAS:
+# comando -> [pip install -r requirements.txt]
+# comando -> [python manage.py migrate]
+# comando -> [python manage.py runserver]
+
+. 4.2 -> para ver en consola las dependecias instaladas:
 # comando -> [nano requirements.txt]
 
 #---------------------------------------------------------------
